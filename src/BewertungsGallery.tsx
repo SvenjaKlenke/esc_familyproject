@@ -1,25 +1,26 @@
 import React from 'react';
 import BewertungsCard from "./BewertungsCard";
+import './BewertungsGallery.css';
 
 type Bewertung= {
-    bewertung: string
+    bewertung: "Hallo"
 }
 
-function BewertungsGallery(probs:Bewertung) {
+function BewertungsGallery() {
     return (
         <div className="bewertungsgallery">
             <ul>
                 <li>
-                    <BewertungsCard name={"Thomas"} bewertung={probs.bewertung}
+                    <BewertungsCard name={"Thomas"} bewertung={"H"}></BewertungsCard>
                 </li>
                 <li>
-                    <BewertungsCard name={"Mama"} bewertung={probs.bewertung}
+                    <BewertungsCard name={"Mama"} bewertung={"H"}></BewertungsCard>
                 </li>
                 <li>
-                    <BewertungsCard name={"Sina"} bewertung={probs.bewertung}
+                    <BewertungsCard name={"Sina"} bewertung={"H"}></BewertungsCard>
                 </li>
                 <li>
-                    <BewertungsCard name={"Svenja"} bewertung={probs.bewertung}
+                    <BewertungsCard name={"Svenja"} bewertung={"H"}></BewertungsCard>
                 </li>
             </ul>
 

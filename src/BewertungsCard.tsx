@@ -1,4 +1,5 @@
 import React from 'react';
+import './BewertungsCard.css';
 
 type BewertungCards={
     name: string
