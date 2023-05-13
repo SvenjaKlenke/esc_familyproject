@@ -42,7 +42,8 @@ function BewertungsCard(props: BewertungCards) {
              bewertungLog === "Sehr schlecht!" ? "rot":
              bewertungLog === "Schlecht!" ? "hellrot" :
              bewertungLog === "Gut!" ? "hellgruen" :
-              bewertungLog === "Mittel!" ? "gelb" : 'default'}>{bewertungLog}</span>
+              bewertungLog === "Mittel!" ? "gelb" :
+                  bewertungLog === null ? "default": 'bla'}>{bewertungLog}</span>
 
             <button onClick={showSehrGut}>Sehr gut</button>
             <button onClick={showGut}>Gut</button>

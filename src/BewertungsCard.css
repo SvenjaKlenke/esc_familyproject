@@ -31,6 +31,15 @@
     border: 2px solid black;
 }
 
+.default{
+    width: 110px;
+    height: auto;
+    display: flex;
+    background-color: gainsboro;
+    border: 2px solid black;
+
+}
+
 .hellrot{
     width: 110px;
     height: auto;
