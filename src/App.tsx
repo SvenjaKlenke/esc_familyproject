@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
         <img src={esc} alt="ESC"/>
-        <p>
-            <TeilnehmerGallery/>
-        </p>
+        <div><TeilnehmerGallery/></div>
+
+
     </div>
   );
 }
