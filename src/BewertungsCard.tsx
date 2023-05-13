@@ -1,42 +1,49 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './BewertungsCard.css';
 
 type BewertungCards={
     name: string
-    bewertung: string
 }
 
 function BewertungsCard(props: BewertungCards) {
+
+    const [bewertungLog, setBewertungLog]= useState("")
+
+
     function showSehrGut() {
-        return props.bewertung = "Sehr gut"
+        setBewertungLog("Sehr gut!");
+
 
     }
 
     function showGut() {
-        return props.bewertung = "Gut"
+        setBewertungLog("Gut!");
 
     }
 
     function showMittel() {
-        return props.bewertung = "Mittel"
+        setBewertungLog("Mittel!");
 
     }
 
     function showSchlecht() {
-        return props.bewertung = "Schlecht"
+        setBewertungLog("Schlecht!");
 
     }
 
     function showSehrSchlecht() {
-        return props.bewertung = "Sehr schlecht"
+        setBewertungLog("Sehr schlecht!")
 
     }
 
     return (
         <div className="bewertungscard">
-            <h1>
-                {props.name}
-            </h1>
+            <span className="name"> {props.name}:</span> <span className={bewertungLog === "Sehr gut!" ? "gruen" :
+             bewertungLog === "Sehr schlecht!" ? "rot":
+             bewertungLog === "Schlecht!" ? "hellrot" :
+             bewertungLog === "Gut!" ? "hellgruen" :
+              bewertungLog === "Mittel!" ? "gelb" : 'default'}>{bewertungLog}</span>
+
             <button onClick={showSehrGut}>Sehr gut</button>
             <button onClick={showGut}>Gut</button>
             <button onClick={showMittel}>Mittel</button>

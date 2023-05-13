@@ -11,16 +11,16 @@ function BewertungsGallery() {
         <div className="bewertungsgallery">
             <ul>
                 <li>
-                    <BewertungsCard name={"Thomas"} bewertung={"H"}></BewertungsCard>
+                    <BewertungsCard name={"Thomas"}></BewertungsCard>
                 </li>
                 <li>
-                    <BewertungsCard name={"Mama"} bewertung={"H"}></BewertungsCard>
+                    <BewertungsCard name={"Mama"}></BewertungsCard>
                 </li>
                 <li>
-                    <BewertungsCard name={"Sina"} bewertung={"H"}></BewertungsCard>
+                    <BewertungsCard name={"Sina"}></BewertungsCard>
                 </li>
                 <li>
-                    <BewertungsCard name={"Svenja"} bewertung={"H"}></BewertungsCard>
+                    <BewertungsCard name={"Svenja"}></BewertungsCard>
                 </li>
             </ul>
 
