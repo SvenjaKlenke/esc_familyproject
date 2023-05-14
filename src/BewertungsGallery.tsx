@@ -2,9 +2,7 @@ import React from 'react';
 import BewertungsCard from "./BewertungsCard";
 import './BewertungsGallery.css';
 
-type Bewertung= {
-    bewertung: "Hallo"
-}
+
 
 function BewertungsGallery() {
     return (
