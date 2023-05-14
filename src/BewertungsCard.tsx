@@ -48,8 +48,8 @@ function BewertungsCard(props: BewertungCards) {
             <button onClick={showSehrGut}>Sehr gut</button>
             <button onClick={showGut}>Gut</button>
             <button onClick={showMittel}>Mittel</button>
-            <button onClick={showSchlecht}>Schlecht</button>
-            <button onClick={showSehrSchlecht}>Sehr schlecht</button>
+            <button onClick={showSchlecht}>Grottig</button>
+            <button onClick={showSehrSchlecht}>Unterirdisch</button>
         </div>
     );
 }
