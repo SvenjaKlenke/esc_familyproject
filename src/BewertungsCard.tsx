@@ -21,35 +21,35 @@ function BewertungsCard(props: BewertungCards) {
 
     }
 
-    function showMittel() {
-        setBewertungLog("Mittel!");
+    function showAnnehmbar() {
+        setBewertungLog("Annehmbar!");
 
     }
 
-    function showSchlecht() {
-        setBewertungLog("Schlecht!");
+    function showGrottig() {
+        setBewertungLog("Grottig!");
 
     }
 
-    function showSehrSchlecht() {
-        setBewertungLog("Sehr schlecht!")
+    function showUnterirdisch() {
+        setBewertungLog("Unterirdisch!")
 
     }
 
     return (
         <div className="bewertungscard">
             <span className="name"> {props.name}:</span> <span className={bewertungLog === "Sehr gut!" ? "gruen" :
-             bewertungLog === "Sehr schlecht!" ? "rot":
-             bewertungLog === "Schlecht!" ? "hellrot" :
+             bewertungLog === "Unterirdisch!" ? "rot":
+             bewertungLog === "Grottig!" ? "hellrot" :
              bewertungLog === "Gut!" ? "hellgruen" :
-              bewertungLog === "Mittel!" ? "gelb" :
+              bewertungLog === "Annehmbar!" ? "gelb" :
                   bewertungLog === null ? "default": 'bla'}>{bewertungLog}</span>
 
             <button onClick={showSehrGut}>Sehr gut</button>
             <button onClick={showGut}>Gut</button>
-            <button onClick={showMittel}>Mittel</button>
-            <button onClick={showSchlecht}>Grottig</button>
-            <button onClick={showSehrSchlecht}>Unterirdisch</button>
+            <button onClick={showAnnehmbar}>Annehmbar</button>
+            <button onClick={showGrottig}>Grottig</button>
+            <button onClick={showUnterirdisch}>Unterirdisch</button>
         </div>
     );
 }
